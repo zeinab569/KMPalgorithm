@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quran/screens/Home.dart';
+import 'package:quran/widgets/show.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: Home(),
+      home: Show(),
     );
   }
 }

@@ -7,6 +7,8 @@ import 'package:quran/widgets/show.dart';
 
 
 import '../methods.dart';
+import 'Bio.dart';
+import 'learnmore.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -25,10 +27,9 @@ class _HomeState extends State<Home> {
 
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Colors.blue,
         title: Text('Bioinformatics'),
         centerTitle: true,
-
       ),
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -133,7 +134,7 @@ class _HomeState extends State<Home> {
                             context: context,
                             builder: (BuildContext context) {
                         return AlertDialog(
-                          content: Text(res.toString()),
+                          content: Text("founded in : "+res.toString()),
                         );
                         }
                         );
@@ -156,8 +157,15 @@ class _HomeState extends State<Home> {
             BottomNavIcons(icon: Icons.home,name: "Home",onTap: (){
               changeScreen(context, Show());
             },),
-            BottomNavIcons(icon:Icons.person_pin,name:"Near By",onTap: (){},),
-            BottomNavIcons(icon:Icons.person,name:"Account",onTap: (){},),
+            BottomNavIcons(icon:Icons.search,name:"search",onTap: (){
+              changeScreen(context, Home());
+            },),
+            BottomNavIcons(icon:Icons.more,name:"learn more",onTap: (){
+              changeScreen(context, Learn());
+            },),
+            BottomNavIcons(icon:Icons.computer,name:"Bioinformatics",onTap: (){
+              changeScreen(context, Bio());
+            },),
           ],
         ),
       ),

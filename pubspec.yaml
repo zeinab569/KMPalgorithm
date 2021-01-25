@@ -23,6 +23,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  url_launcher: ^5.7.10
+  flutter_linkify: ^4.0.2
+  link_text: ^0.1.4
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -50,6 +53,20 @@ flutter:
   assets:
     - images/kmp1.jpg
     - images/KMP-Algorithm.jpg
+    - images/KMP5.png
+    - images/example1.jpg
+    - images/exampl2.jpg
+    - images/example3.jpg
+    - images/example4.jpg
+    - images/example5.jpg
+    - images/exapl6.jpg
+    - images/exaple7.jpg
+    - images/example8.jpg
+    - images/exampe9.jpg
+    - images/example10.jpg
+    - images/example11.jpg
+    - images/learnmore.jpg
+    - images/bioinfo.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

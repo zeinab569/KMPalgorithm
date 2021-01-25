@@ -1,6 +1,6 @@
 import 'package:quran/models/soura.dart';
 import 'package:quran/screens/Home.dart';
-
+import 'package:url_launcher/url_launcher.dart';
 List computeLPS(String pattern){
   List lps = new List(pattern.length);
   lps[0] = 0;
@@ -54,3 +54,5 @@ List<int> kmp(String text, String pattern) {
 
   return foundIndexes;
 }
+
+
